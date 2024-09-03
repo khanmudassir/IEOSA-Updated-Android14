@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/img_holder"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/greenback_rounded_drawable"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/img_thumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:src="@drawable/my_library_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_holder"
+            android:layout_marginTop="7dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingStart="2dp"
+            android:singleLine="true"
+            android:text="awdaw dd dfsfds"
+            android:textColor="@color/txt_dark_title"
+            android:textSize="16sp"
+            tools:ignore="RtlSymmetry" />
+    </RelativeLayout>
+
+</LinearLayout>

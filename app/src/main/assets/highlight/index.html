@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <!--<script type="text/javascript" src="jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="jquery.textHighlighter.js"></script>-->
+    <script type="text/javascript" src="highlight.js"></script>
+    <link rel="stylesheet" href="highlight.css" type="text/css"/>
+
+</head>
+<body>
+    <div id="mainContainer">
+    <span id="sp1" style="font-weight:bold">This is sample text to highlight. This is sample text to highlight. This is sample text to highlight</span><br />
+    <span id="sp2" style="font-style:italic">This is sample text to highlight. This is sample text to highlight. This is sample text to highlight</span><br />
+    <span id="sp3" style="text-decoration:underline">This is sample text to highlight. This is sample text to highlight. This is sample text to highlight</span><br/>
+    <span id="sp4" style="color:CYAN">This is sample text to highlight. This is sample text to highlight. This is sample text to highlight</span>
+    </div>
+    <div id="Div1">
+    <span id="Span1" style="font-weight:bold">This is sample text to highlight. This is sample text to highlight. This is sample text to highlight</span><br />
+    <span id="Span2" style="font-style:italic">This is sample text to highlight. This is sample text to highlight. This is sample text to highlight</span><br />
+    <span id="Span3" style="text-decoration:underline">This is sample text to highlight. This is sample text to highlight. This is sample text to highlight</span><br/>
+    <span id="Span4" style="color:CYAN">This is sample text to highlight. This is sample text to highlight. This is sample text to highlight</span>
+    </div>
+    <input type="button" value="highlight" onclick="ShowColorPallete()" />
+    <input type="button" value="removehighlight" onclick="removehighlightedText()" />
+    <input type="button" value="get all highlights" onclick="getAllHighlights()" /><br /><br />
+    <input id="btnRed" style="display:none" type="button" value="highlightR" onclick="highlightText('Yellow')" /><br />
+    <input id="btnBlue" style="display:none" type="button" value="highlightB" onclick="highlightText('B')" /><br />
+    <input id="btnGreen" style="display:none" type="button" value="highlightG" onclick="highlightText('G')" />
+    
+</body>
+</html>

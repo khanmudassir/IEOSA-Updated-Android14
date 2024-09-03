@@ -1,0 +1,272 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <include
+        android:id="@+id/layout_top_bar_holder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/custom_actionbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout_top_bar_holder"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="20dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout_holder1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="27dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="Please fill your address detail"
+                        android:textColor="@color/txt_color"
+                        android:textColorHint="@color/txt_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/txt_firstname"
+                            style="@style/EditTextAppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="First Name"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_color"
+                            android:textColorHint="@color/txt_color"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/txt_lastname"
+                            style="@style/EditTextAppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Last Name"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_color"
+                            android:textColorHint="@color/txt_color"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/txt_pincode"
+                            style="@style/EditTextAppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Pincode"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_color"
+                            android:textColorHint="@color/txt_color"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/txt_address"
+                            style="@style/EditTextAppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Address"
+                            android:inputType="textMultiLine"
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/txt_color"
+                            android:textColorHint="@color/txt_color"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/txt_landmark"
+                            style="@style/EditTextAppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Landmark"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_color"
+                            android:textColorHint="@color/txt_color"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/txt_city"
+                            style="@style/EditTextAppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="City"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_color"
+                            android:textColorHint="@color/txt_color"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <Spinner
+                            android:id="@+id/spinner_state"
+                            style="@style/EditTextAppTheme"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text=" +91 "
+                            android:textColor="@color/txt_color"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/txt_phone"
+                            style="@style/EditTextAppTheme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:digits="0123456789"
+                            android:hint="Phone Number"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/txt_color"
+                            android:textColorHint="@color/txt_color"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_buttons"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_skip"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_buttons"
+                    android:gravity="center"
+                    android:text="Skip"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

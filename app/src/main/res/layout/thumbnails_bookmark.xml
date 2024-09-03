@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/oval"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/img_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:clickable="true"
+                        android:src="@drawable/bookmark_active" />
+                    <!-- Your LinearLayout content -->
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/txt_section_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:ems="10"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Section Name"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_topic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:ems="10"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Topic Name"
+                android:textColor="@android:color/background_dark"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <!-- -add your views here -->
+
+            <TextView
+                android:id="@+id/bookmark_pageNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:text="Page No 1"
+                android:textColor="@android:color/background_dark"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

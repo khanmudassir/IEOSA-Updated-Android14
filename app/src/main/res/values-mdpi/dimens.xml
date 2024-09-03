@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+      <bool name="isTablet">false</bool>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="sheth_icon_width">168dp</dimen>
+    <dimen name="sheth_icon_height">117dp</dimen>
+    <dimen name="margin_btw_title_img">20dp</dimen>
+    <dimen name="title_text_size">27sp</dimen>
+    <dimen name="title_text_and_size">23sp</dimen>
+    <dimen name="title_text_to_knw_size">12sp</dimen>
+    <dimen name="title_text_powered_size">10sp</dimen>
+    <dimen name="sheth_img_top_margin">-10dp</dimen>
+    <dimen name="flipick_img_bottom_margin">15dp</dimen>
+    <dimen name="flipick_icon_width">137dp</dimen>
+    <dimen name="flipick_icon_height">41dp</dimen>
+    <dimen name="txt_to_knw_top_margin">15dp</dimen>
+
+</resources>

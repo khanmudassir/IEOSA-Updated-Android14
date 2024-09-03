@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <org.xwalk.core.XWalkView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webviewpagination_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+    </org.xwalk.core.XWalkView>
+
+    <RelativeLayout
+        android:id="@+id/layout_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:visibility="gone"
+        android:paddingLeft="0dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_progress"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progressbar_activity"
+                style="@android:style/Widget.Material.Light.ProgressBar.Small.Inverse"
+                android:layout_width="200dp"
+                android:progressBackgroundTint="@color/highlight_red"
+                android:layout_height="wrap_content"
+                android:maxHeight="40dip"
+                android:minHeight="30dip" />
+
+            <TextView
+                android:id="@+id/progress_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loading"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

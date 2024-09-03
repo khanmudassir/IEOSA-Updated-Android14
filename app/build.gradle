@@ -1,0 +1,87 @@
+
+plugins {
+    id 'com.android.application'
+}
+
+android {
+
+    namespace = "com.ieosabookreader"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.ieosabookreader"
+        minSdkVersion 22
+        targetSdkVersion 34
+        versionCode 64
+        versionName "5.0.9"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+        }
+
+        splits {
+            // Configures multiple APKs based on ABI.  101793110581
+            abi {
+                // Enables building multiple APKs per ABI.
+                enable true
+                // By default all ABIs are included, so use reset() and include to specify that we only
+                // want APKs for armeabi-v7a and arm64-v8a.
+
+                // Resets the list of ABIs that Gradle should create APKs for to none.
+                reset()
+
+                // Specifies a list of ABIs that Gradle should create APKs for.
+                //include "armeabi-v7a", "arm64-v8a"
+                include "armeabi-v7a','arm64-v8a','x86','x86_64"
+
+                // Specifies that we do not want to also generate a universal APK that includes all ABIs.
+                universalApk false
+            }
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+
+    buildToolsVersion '34.0.0'
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'org.jetbrains:annotations:24.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.7.7'
+    implementation 'androidx.navigation:navigation-ui:2.7.7'
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+   // implementation 'org.xwalk:xwalk_core_library:23.53.589.4'
+}
+
+

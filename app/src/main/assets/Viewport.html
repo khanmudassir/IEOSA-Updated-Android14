@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+function GetDimentions()
+{   
+    if (document.getElementById("divviewport")) {
+                var widthtest = document.documentElement.clientWidth + " ";
+                var heighttest = document.documentElement.clientHeight + " ";
+				var finalresult = widthtest + heighttest;				
+				var Request = {};
+				Request.finalresult = finalresult;
+				var data = JSON.stringify(Request);
+                //alert("It worked!");
+                //AndroidCall.DisplayErrorAsUIThread(data);
+                    setTimeout(function() 
+                   {
+                        AndroidCall.setDimention(document.documentElement.clientWidth,document.documentElement.clientHeight);
+                   }, 5000);
+        
+        } else {
+            alert("It failed!");
+        }
+		
+
+}
+</script>
+<title>Untitled Page</title>
+</head>
+<body style='height:100%;width:100%;' onload="GetDimentions();">
+<div style='height:100%;width:100%;'>  </div>
+<div id='divviewport' style='position:absolute;left:0px;top:0px;'></div>
+</body>
+</html>

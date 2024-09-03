@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="dashboardArray">
+        <item>My Library</item>
+        <!-- <item>Store</item> -->
+        <!-- <item>Scan QR Code</item> -->
+        <!-- <item>Redeem Access Code</item> -->
+        <!-- <item>My Profile</item> -->
+    </string-array>
+    <integer-array name="dashboardImageArray">
+        <item>@drawable/my_library_icon</item>
+        <!-- <item>@drawable/store</item> -->
+        <!-- <item>@drawable/qr_codes</item> -->
+        <!-- <item>@drawable/access_codes</item> -->
+        <!-- <item>@drawable/my_profile</item> -->
+    </integer-array>
+    <integer-array name="dashboardColorArray">
+        <item>@color/mylibrary_landing_page</item>
+        <!-- <item>@color/store_landing_page</item> -->
+        <!-- <item>@color/my_profile_landning_page</item> -->
+        <!-- <item>@color/analytics_landing_page</item> -->
+        <!-- <item>@color/challenges_landing_page</item> -->
+        <!-- <item>@drawable/achievements</item> -->
+        <!-- <item>@drawable/leaderboard</item> -->
+        <!-- <item>@color/circles_landing_page</item> -->
+        <!-- <item>@color/chat_landing_page</item> -->
+        <!-- <item>@color/notifications_landing_page</item> -->
+        <!-- <item>@color/qr_codes</item> -->
+        <!-- <item>@color/access_codes_landing_page</item> -->
+    </integer-array>
+
+</resources>

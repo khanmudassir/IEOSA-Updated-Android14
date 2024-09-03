@@ -1,0 +1,368 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/my_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fitsSystemWindows="true" />
+
+    <com.ieosabookreader.customactionbar.CustomActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/layout_navigation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/background_view_rounded_single"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="3" >
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/txt_PageNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    tools:text="Page No.43/82"
+                    android:textColor="#fcfcfc"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2.5"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/txt_goto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go To Page"
+                    android:textColor="#fcfcfc"
+                    android:textSize="11sp" />
+
+                <EditText
+                    android:id="@+id/edit_goto"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1.7"
+                    android:background="@drawable/rounded_corner_with_white_bg"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:maxWidth="4dp"
+                    android:textColor="#000000"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btngoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_buttons"
+                    android:text="Go"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/navigation_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:progressDrawable="@drawable/progressbar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notesholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/showNotes_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_aqua_outline"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/showedit_notes"
+                android:layout_width="210dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_corner_with_white_bg"
+                android:gravity="top"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:id="@+id/layout_editdel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="@color/aqua"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/text_notes_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="#e3e3e3"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="10dp"
+                    android:text="Save"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/text_notes_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@color/aqua"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="10dp"
+                    android:text="Delete"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notehighlightholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/note_hightlight_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/aqua" />
+
+            <TextView
+                android:id="@+id/txt_note"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#e3e3e3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Note" />
+
+            <TextView
+                android:id="@+id/txt_highlight"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/aqua"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Highlight"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_dictionary"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="#e3e3e3"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Dictionary" />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/txt_Close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/close"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/color_pallet_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_aqua_outline"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/text_green"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/highlight_green"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:id="@+id/text_aqua"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/highlight_blue"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:id="@+id/text_voilet"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/highlight_violet"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/text_yellow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/highlight_yellow"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:id="@+id/text_orange"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/highlight_orange"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:id="@+id/text_red"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/highlight_red"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@color/aqua"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/aqua"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Delete"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notes_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rect_aqua_outline"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/edt_notes"
+                android:layout_width="210dp"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_corner_with_white_bg"
+                android:gravity="top"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:id="@+id/layout_save"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="@color/aqua"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/text_notes_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/aqua"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="10dp"
+                    android:text="Save"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

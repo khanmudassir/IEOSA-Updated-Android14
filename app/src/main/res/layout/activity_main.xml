@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E9EDF0"
+    android:keepScreenOn="true" >
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~  ACTION BAR LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:src="@drawable/refresh_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/btn_landingpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:src="@drawable/menu_list" />
+
+        <TextView
+            android:id="@+id/txt_title_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="My Library"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~  GRID VIEW LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="7dp"
+        android:background="@drawable/spinner_bg"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layoutGridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:clipToPadding="true"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipToPadding="true"
+            android:gravity="center"
+            android:horizontalSpacing="20dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="auto_fit"
+            android:scrollbars="none"
+            android:verticalSpacing="20dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

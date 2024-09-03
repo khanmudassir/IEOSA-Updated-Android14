@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">IEOSA Book Reader</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="lt_lt_swipe_to_continue"><![CDATA[<<Swipe to Continue]]></string>
+
+    <!-- <string name="app_name">Book Hungama</string> -->
+    <!-- <string name="app_name">Elsevier eBook Reader</string> -->
+    <string name="action_settings">Settings</string>
+    <string name="menu_item_clear_memory_cache">Clear memory cache</string>
+    <string name="menu_item_clear_disc_cache">Clear disc cache</string>
+    <string name="menu_item_pause_on_scroll">Pause on scroll</string>
+    <string name="menu_item_pause_on_fling">Pause on fling</string>
+    <!-- <string name="txt_title">Book Reader</string> -->
+    <string name="txt_title">eBook Reader</string>
+    <string name="itm_menu_signout">Sign Out</string>
+    <string name="itm_menu_exit">Exit</string>
+    <string name="ttl_menu">Setting</string>
+    <string name="txt_authentication">Authentication</string>
+    <string name="loading">Downloading &#8230;</string>
+    <string name="book_title">Book Title</string>
+    <string name="back_button">Back</string>
+    <string name="download_text">Download</string>
+    <string name="update_text">Update</string>
+    <string name="view_text">View</string>
+    <string name="label_txt">Sign In</string>
+    <string name="edit_hint_userid">User Id</string>
+    <string name="edit_hint_password">Password</string>
+    <string name="btn_signin">Sign In</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="signinging_txt">Signing in. Please wait.</string>
+    <string name="drp_down">Choose a Book Store</string>
+    <string name="about_us1">Flipick Reader is an integrated solution for secure digital publishing of Content.</string>
+    <string name="about_us2">Flipick is part of the Mediawide Group of Companies.</string>
+    <string name="about_us3">Flipick has a development and Production center based in Pune, India and has sales, marketing and support in the USA ,UK
+                              and Singapore.</string>
+    <string name="label_about">About</string>
+    <string name="txt_update">Update</string>
+    <string name="sign_up">Sign up</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_add">Email Address</string>
+    <string name="pass">Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="mobile">Mobile</string>
+    <string name="Store">Store</string>
+    <string name="btn_continue">Continue</string>
+    <string name="txt_university">University</string>
+    <string name="txt_discipline">Discipline</string>
+    <string name="txt_course">Course</string>
+    <string name="txt_year">Year</string>
+    <string name="txt_semister">Semester </string>
+
+    <!-- String for splash screen -->
+    <string name="title_first_line">Interactive e-books</string>
+    <string name="title_second_line">and</string>
+    <string name="title_thrd_line">MCQ test papers</string>
+    <string name="title_to_know_more">to know more</string>
+    <string name="title_click_here">Click here</string>
+    <string name="title_powered_by">powered by</string>
+
+    <!-- Login Screen -->
+    <string name="edit_hint_user">Email Address</string>
+    <string name="edit_hint_mobile">Register mobile no. here</string>
+    <string name="label_forget_pass">Forgot password</string>
+    <string name="label_login_forget_pass"><u>Forgot password?</u></string>
+    <string name="label_login_signup"><u>Signup for Flipick</u></string>
+
+    <!-- Signup Screen Text -->
+    <string name="login"><u>Login</u></string>
+    <string name="spinner_prompt">Please select the Store</string>
+
+    <!-- Signup -->
+    <string name="hint_first_name">First Name*</string>
+    <string name="hint_last_name">Last Name*</string>
+    <string name="hint_email">Email*</string>
+    <string name="hint_password">Password*</string>
+    <string name="hint_confirm_password">Confirm Password*</string>
+    <string name="hint_mobile">Mobile*</string>
+    <!-- Color -->
+
+
+    <string name="printedcopy_message">"QR Code has been scanned successfully.\n \nIf you want to &quot;Print Copy&quot; of this tile then please click on the Yes button."</string>
+    <string name="addressconfirmation_message">We have received your request and share the details of shipment on your registered email id.\n \nIf you have any queries, please email us at indiacontact@elsevier.com</string>
+    <string name="prefixno">+91</string>
+    <string name="title_activity_show_bookry_widget">ShowBookryWidget</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="sjfd_fdg_jfgf_f_hg_h_gh_g_hg_hgfg_fhfg_h">sjfd fdg jfgf f hg h gh g hg hgfg fhfg h</string>
+
+</resources>

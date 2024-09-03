@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ieosabookreader">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+  <!--  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission android:name="android.permission.ACTION_OPEN_DOCUMENT_TREE " />
+    <uses-permission android:name="android.permission.ACTION_OPEN_DOCUMENT " />
+    <uses-permission android:name="android.permission.ACTION_CREATE_DOCUMENT " />
+    <uses-permission android:name="android.permission.READ_MEDIA_* " />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_* " />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_FILES* " />
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    &lt;!&ndash; Required only if your app needs to access videos
+         that other apps created. &ndash;&gt;
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    &lt;!&ndash; Required only if your app needs to access audio files
+         that other apps created. &ndash;&gt;
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />-->
+
+    <application
+        android:name=".FlipickApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/app_icon"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.IEOSABookReader.NoActionBar"
+        tools:targetApi="m">
+        <activity android:name=".BookryWGT_Activity" android:theme="@style/Theme.IEOSABookReader.NoActionBar"/>
+        <activity android:name=".BrowserFragmentImagePopUp" android:theme="@style/Theme.IEOSABookReader.NoActionBar"/>
+        <activity android:name=".DictionaryActivity" android:theme="@style/Theme.IEOSABookReader.NoActionBar"/>
+        <activity android:name=".flipickpageviewer" android:theme="@style/Theme.IEOSABookReader.NoActionBar"/>
+        <activity android:name=".PaginationActivity" android:theme="@style/Theme.IEOSABookReader.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".BookmarkActivity" android:theme="@style/Theme.IEOSABookReader.NoActionBar"/>
+        <activity android:name=".HighlightsActivity" android:theme="@style/Theme.IEOSABookReader.NoActionBar"/>
+        <activity android:name=".NotesActivity" android:theme="@style/Theme.IEOSABookReader.NoActionBar"/>
+        <activity android:name=".LandingPage_Activity" android:theme="@style/Theme.IEOSABookReader.NoActionBar"/>
+        <activity android:name=".Blank_webview_landscape" android:theme="@style/Theme.IEOSABookReader.NoActionBar" android:screenOrientation="landscape"/>
+        <activity android:name=".Blank_webview" android:theme="@style/Theme.IEOSABookReader.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name=".FlipickProgressBar" android:theme="@style/Theme.IEOSABookReader.NoActionBar"/>
+        <activity android:name=".SideloadActivity" android:theme="@style/Theme.IEOSABookReader.NoActionBar"/>
+        <activity android:name=".SplashScreen" android:theme="@style/Theme.IEOSABookReader.NoActionBar"/>
+        <activity android:name=".TOCBrowserFragment" android:theme="@style/Theme.IEOSABookReader.NoActionBar"/>
+        <activity android:name=".RunFlipickApp"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+
+        <property android:name="REQUIRE_SECURE_ENV" android:value="1" />
+
+
+    </application>
+
+
+</manifest>

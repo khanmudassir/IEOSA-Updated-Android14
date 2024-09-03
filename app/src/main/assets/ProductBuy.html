@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+
+        function buyButtonClicked() 
+        {
+            AndroidFunction.GetParentViewURL();
+        }
+    
+    </script>
+<script type="text/javascript"> function  DisplayImageInPopup(ImagePath) { event.preventDefault();event.stopPropagation(); AndroidFunction.DisplayImageInPopup(ImagePath); } window.onclick=function(e)   { 	AndroidFunction.ShowActionBar();   } ; function GotoLink(Url)  {	AndroidFunction.PageNavigate(Url);  } </script>
+  <style>
+        @font-face
+        {
+            font-family: 'DroidSansRegular';
+            src: url('html/css/fonts/droidsans.woff') format('woff');
+        }
+        body
+        {
+            font-family: 'DroidSansRegular';
+            font-size: 17px;
+            color:#111;
+			background:#DFDFDF;
+        }
+        .infoText
+        {
+            text-align: center;
+            line-height: 30px;
+           /* margin: 60px 0 20px;*/
+		}
+        input
+        {
+            border: 0px solid #cfcfd2;
+            padding: 12px 60px ;
+            background: #19b4c6;
+            
+            font-size: 19px;
+			color:#fff;
+			
+			margin: 22px auto 0px auto;
+			
+        }
+        .infoHolder
+        {
+            text-align: center;
+			background: #DFDFDF;
+			padding:28px 18px 18px 18px;
+        }
+		
+    </style>
+    
+</head>
+<body class="infoPage">
+    <div class="infoHolder">
+        <div class="infoText">This content is not available with the free trial.<br /> You would need to go to the store to buy the course.</div>
+        <input type="button"  value="Buy now!" class="btnBye" onclick="buyButtonClicked()" />
+    </div>
+</body>
+</html>
